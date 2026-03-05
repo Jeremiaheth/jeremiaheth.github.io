@@ -152,4 +152,4 @@ export const contact = {
 };
 
 export const aboutBio =
-  "Results-driven IT professional transitioning into cybersecurity with 4+ years of hands-on experience supporting users, securing systems, and building practical automation. I combine IT operations expertise with AI-driven development to create intelligent tools that strengthen security outcomes.";
+  "Senior Cybersecurity Specialist with 4+ years of hands-on experience in threat detection, incident response, and security operations. I build AI-powered security tools — from graph-native memory engines to multi-agent offensive platforms — bridging the gap between traditional defense and intelligent automation. Currently pursuing a BS in Computer Science while actively contributing to the open-source security tooling ecosystem.";
