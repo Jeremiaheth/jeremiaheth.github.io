@@ -1,6 +1,6 @@
 # jeremiaheth.github.io
 
-Personal portfolio site for **Jeremiah Ojo** — Senior Cybersecurity Specialist, builder, and open-source contributor.
+Personal portfolio site for **Jeremiah Ojo** — transitioning into Cybersecurity, IT Specialist, builder, and open-source contributor.
 
 🔗 **Live:** [jeremiaheth.github.io](https://jeremiaheth.github.io)
 
