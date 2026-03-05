@@ -1,6 +1,13 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { ReactLenis } from "lenis/react";
+import "lenis/dist/lenis.css";
 import "./globals.css";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+import ParticleBackground from "@/components/ParticleBackground";
+import ScrollProgressIndicator from "@/components/ScrollProgressIndicator";
+import Preloader from "@/components/Preloader";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
@@ -24,7 +31,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark">
-      <body className={`${inter.variable} bg-black font-sans text-white antialiased`}>{children}</body>
+      <body className={`${inter.variable} bg-background font-sans text-foreground antialiased`}>
+        <ReactLenis root options={{ lerp: 0.1, duration: 1.4 }}>
+          <Navbar />
+          <main className="relative z-[1]">{children}</main>
+          <Footer />
+          <Preloader />
+          <ScrollProgressIndicator />
+          <ParticleBackground />
+        </ReactLenis>
+      </body>
     </html>
   );
 }

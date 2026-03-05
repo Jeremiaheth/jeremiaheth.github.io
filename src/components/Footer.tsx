@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Github, Linkedin, Mail } from "lucide-react";
+import { Github, Linkedin, BookOpen, Mail } from "lucide-react";
 import { navLinks, socialLinks } from "@/lib/data";
 
 export default function Footer() {
@@ -21,15 +21,15 @@ export default function Footer() {
           </nav>
 
           <div className="flex items-center gap-3 text-zinc-300">
-            <a href={socialLinks[0].href} aria-label="GitHub" target="_blank" rel="noreferrer" className="hover:text-accent">
-              <Github className="h-4 w-4" />
-            </a>
-            <a href={socialLinks[1].href} aria-label="LinkedIn" target="_blank" rel="noreferrer" className="hover:text-accent">
-              <Linkedin className="h-4 w-4" />
-            </a>
-            <a href={socialLinks[2].href} aria-label="Email" className="hover:text-accent">
-              <Mail className="h-4 w-4" />
-            </a>
+            {socialLinks.map((link) => {
+              const icons: Record<string, typeof Github> = { GitHub: Github, LinkedIn: Linkedin, Medium: BookOpen, Email: Mail };
+              const Icon = icons[link.label] ?? Mail;
+              return (
+                <a key={link.label} href={link.href} aria-label={link.label} target={link.href.startsWith('http') ? '_blank' : undefined} rel={link.href.startsWith('http') ? 'noreferrer' : undefined} className="hover:text-accent">
+                  <Icon className="h-4 w-4" />
+                </a>
+              );
+            })}
           </div>
         </div>
       </div>

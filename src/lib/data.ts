@@ -1,7 +1,8 @@
 export type Skill = {
   name: string;
   category: "Security" | "Development" | "AI & Data" | "Infrastructure";
-  icon: string;
+  icon: string;        // Lucide icon name for abstract skills
+  svgIcon?: string;    // Path to real SVG logo (overrides Lucide)
 };
 
 export type ExperienceItem = {
@@ -38,6 +39,7 @@ export const navLinks = [
 export const socialLinks = [
   { label: "GitHub", href: "https://github.com/Jeremiaheth" },
   { label: "LinkedIn", href: "https://linkedin.com/in/jeremiah-e-ojo" },
+  { label: "Medium", href: "https://medium.com/@jeremiah.ojo" },
   { label: "Email", href: "mailto:Jeremiah.ojo@outlook.com" },
 ];
 
@@ -54,20 +56,23 @@ export const skills: Skill[] = [
   { name: "Threat Awareness", category: "Security", icon: "Eye" },
   { name: "Access Control", category: "Security", icon: "Key" },
   { name: "OSINT", category: "Security", icon: "Search" },
-  { name: "Python", category: "Development", icon: "Code2" },
-  { name: "Node.js", category: "Development", icon: "Server" },
-  { name: "JavaScript / TypeScript", category: "Development", icon: "Braces" },
-  { name: "PowerShell", category: "Development", icon: "Terminal" },
+  { name: "Python", category: "Development", icon: "Code2", svgIcon: "/icons/python.svg" },
+  { name: "Node.js", category: "Development", icon: "Server", svgIcon: "/icons/nodejs.svg" },
+  { name: "JavaScript", category: "Development", icon: "Braces", svgIcon: "/icons/javascript.svg" },
+  { name: "TypeScript", category: "Development", icon: "Braces", svgIcon: "/icons/typescript.svg" },
+  { name: "PowerShell", category: "Development", icon: "Terminal", svgIcon: "/icons/powershell.svg" },
   { name: "REST APIs", category: "Development", icon: "Webhook" },
   { name: "Vector Databases", category: "AI & Data", icon: "Database" },
   { name: "LLM Integration", category: "AI & Data", icon: "Brain" },
   { name: "Agent Architectures", category: "AI & Data", icon: "Bot" },
   { name: "Semantic Search", category: "AI & Data", icon: "Binary" },
-  { name: "OCI", category: "Infrastructure", icon: "Cloud" },
-  { name: "Supabase", category: "Infrastructure", icon: "Database" },
-  { name: "Docker", category: "Infrastructure", icon: "Box" },
-  { name: "Linux", category: "Infrastructure", icon: "Laptop" },
-  { name: "Microsoft 365", category: "Infrastructure", icon: "Building2" },
+  { name: "OCI", category: "Infrastructure", icon: "Cloud", svgIcon: "/icons/oracle.svg" },
+  { name: "Supabase", category: "Infrastructure", icon: "Database", svgIcon: "/icons/supabase.svg" },
+  { name: "Docker", category: "Infrastructure", icon: "Box", svgIcon: "/icons/docker.svg" },
+  { name: "Linux", category: "Infrastructure", icon: "Laptop", svgIcon: "/icons/linux.svg" },
+  { name: "Microsoft 365", category: "Infrastructure", icon: "Building2", svgIcon: "/icons/microsoft365.svg" },
+  { name: "AWS", category: "Infrastructure", icon: "Cloud", svgIcon: "/icons/aws.svg" },
+  { name: "Google Workspace", category: "Infrastructure", icon: "Building2", svgIcon: "/icons/googleworkspace.svg" },
 ];
 
 export const experience: ExperienceItem[] = [
@@ -141,6 +146,7 @@ export const contact = {
   email: "Jeremiah.ojo@outlook.com",
   linkedin: "https://linkedin.com/in/jeremiah-e-ojo",
   github: "https://github.com/Jeremiaheth",
+  medium: "https://medium.com/@jeremiah.ojo",
   location: "Lagos, Nigeria",
   roleStatus: "Open to cybersecurity analyst, SOC analyst, and security operations roles",
 };
