@@ -10,7 +10,7 @@ export default function Navbar() {
     <header className="sticky top-0 z-50 border-b border-zinc-800/80 bg-black/90 backdrop-blur">
       <div className="mx-auto flex h-16 w-full max-w-6xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <Link href="#home" className="flex items-center">
-          <Image src="/images/logo.png" alt="Jeremiah Ojo" width={120} height={40} className="h-8 w-auto sm:h-10" priority />
+          <Image src="/images/logo.png" alt="Jeremiah Ojo" width={200} height={200} className="h-12 w-auto sm:h-14" priority />
         </Link>
 
         <nav className="hidden items-center gap-6 md:flex">
