@@ -48,7 +48,7 @@ export default function Hero() {
   );
 
   return (
-    <section id="home" ref={sectionRef} className="relative overflow-hidden bg-background pb-16 pt-24 sm:pt-28">
+    <section id="home" ref={sectionRef} className="relative overflow-hidden pb-16 pt-24 sm:pt-28">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_20%,rgba(250,204,21,0.14),transparent_45%)]" />
       <div ref={contentRef} className="relative container grid items-center gap-12 lg:grid-cols-2">
         <div className="space-y-6">
@@ -97,22 +97,13 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="hero-reveal rounded-2xl border border-border bg-card p-8">
-          <p className="text-sm uppercase tracking-[0.2em] text-muted-foreground">Impact Snapshot</p>
-          <div className="mt-8 space-y-8">
-            <div>
-              <p className="text-5xl font-bold text-accent">4+</p>
-              <p className="mt-2 text-sm uppercase tracking-[0.18em] text-muted-foreground">Years Experience</p>
-            </div>
-            <div>
-              <p className="text-5xl font-bold text-accent">90%</p>
-              <p className="mt-2 text-sm uppercase tracking-[0.18em] text-muted-foreground">Resolution Rate</p>
-            </div>
-            <div>
-              <p className="text-5xl font-bold text-accent">50+</p>
-              <p className="mt-2 text-sm uppercase tracking-[0.18em] text-muted-foreground">Employees Supported</p>
-            </div>
-          </div>
+        <div className="hero-reveal flex items-center justify-center">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/images/hero-illustration.svg"
+            alt="Illustrated avatar"
+            className="w-full max-w-md lg:max-w-lg drop-shadow-2xl"
+          />
         </div>
       </div>
     </section>

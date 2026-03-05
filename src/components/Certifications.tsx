@@ -31,7 +31,7 @@ export default function Certifications() {
   );
 
   return (
-    <section className="bg-background py-20" ref={containerRef}>
+    <section className="py-20" ref={containerRef}>
       <div className="container">
         <h2 className="slide-up mb-10 text-4xl font-bold text-foreground sm:text-5xl">Certifications</h2>
 

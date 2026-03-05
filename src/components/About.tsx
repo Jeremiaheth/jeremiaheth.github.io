@@ -30,22 +30,35 @@ export default function About() {
   );
 
   return (
-    <section id="about" ref={containerRef} className="bg-background py-20">
-      <div className="container grid gap-10 lg:grid-cols-2">
-        <div className="slide-up rounded-2xl border border-border bg-card p-7 sm:p-10">
-          <h2 className="text-4xl font-bold text-foreground sm:text-5xl">
-            About <span className="outlined-text">Me</span>
-          </h2>
-          <p className="mt-6 text-base leading-relaxed text-muted-foreground sm:text-lg">{aboutBio}</p>
-        </div>
+    <section id="about" ref={containerRef} className="py-20">
+      <div className="container">
+        <div className="grid gap-10 lg:grid-cols-2 items-center">
+          <div className="slide-up flex items-center justify-center">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/images/about-illustration.svg"
+              alt="Person reading illustration"
+              className="w-full max-w-sm lg:max-w-md drop-shadow-xl"
+            />
+          </div>
 
-        <div className="slide-up grid gap-4 sm:grid-cols-3 lg:grid-cols-1">
-          {aboutStats.map((stat) => (
-            <div key={stat.label} className="rounded-2xl border border-border bg-card p-6">
-              <p className="text-4xl font-bold text-accent">{stat.value}</p>
-              <p className="mt-2 text-sm uppercase tracking-[0.14em] text-muted-foreground">{stat.label}</p>
+          <div className="space-y-6">
+            <div className="slide-up rounded-2xl border border-border bg-card p-7 sm:p-10">
+              <h2 className="text-4xl font-bold text-foreground sm:text-5xl">
+                About <span className="outlined-text">Me</span>
+              </h2>
+              <p className="mt-6 text-base leading-relaxed text-muted-foreground sm:text-lg">{aboutBio}</p>
             </div>
-          ))}
+
+            <div className="slide-up grid gap-4 sm:grid-cols-3">
+              {aboutStats.map((stat) => (
+                <div key={stat.label} className="rounded-2xl border border-border bg-card p-6 text-center">
+                  <p className="text-4xl font-bold text-accent">{stat.value}</p>
+                  <p className="mt-2 text-sm uppercase tracking-[0.14em] text-muted-foreground">{stat.label}</p>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </section>

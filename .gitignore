@@ -34,3 +34,15 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# temp utility scripts
+decode-b64.mjs
+decode-b64.ps1
+decode-hero.mjs
+decode-svg.js
+decode.js
+save-about-svg.mjs
+save-svgs.mjs
+temp-save.js
+hero-b64.txt
+temp-b64.txt

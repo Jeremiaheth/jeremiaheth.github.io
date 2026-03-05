@@ -31,7 +31,7 @@ export default function Projects() {
   );
 
   return (
-    <section id="projects" ref={containerRef} className="bg-background py-20">
+    <section id="projects" ref={containerRef} className="py-20">
       <div className="container">
         <h2 className="slide-up mb-10 text-4xl font-bold text-foreground sm:text-5xl">My Projects</h2>
 

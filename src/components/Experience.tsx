@@ -30,7 +30,7 @@ export default function Experience() {
   );
 
   return (
-    <section id="experience" ref={containerRef} className="bg-background py-20">
+    <section id="experience" ref={containerRef} className="py-20">
       <div className="container max-w-5xl">
         <h2 className="slide-up mb-12 text-4xl font-bold text-foreground sm:text-5xl">My Experience</h2>
 

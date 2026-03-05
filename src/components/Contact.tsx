@@ -64,7 +64,7 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" ref={containerRef} className="bg-background py-20">
+    <section id="contact" ref={containerRef} className="py-20">
       <div className="container grid gap-10 lg:grid-cols-2">
         <div className="slide-up space-y-6">
           <h2 className="text-4xl font-bold text-foreground sm:text-5xl">Let&apos;s Work Together</h2>

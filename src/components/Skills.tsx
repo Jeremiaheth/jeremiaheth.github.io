@@ -89,7 +89,7 @@ export default function Skills() {
   );
 
   return (
-    <section id="skills" ref={containerRef} className="bg-background py-20">
+    <section id="skills" ref={containerRef} className="py-20">
       <div className="container">
         <h2 className="slide-up mb-12 text-4xl font-bold text-foreground sm:text-5xl">
           My <span className="text-accent">Skills</span>
